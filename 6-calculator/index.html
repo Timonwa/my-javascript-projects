@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" name="calculator">
+        <!-- calulator-cntr -->
+        <div class="calulator-cntr">
+          <!-- the window -->
+          <div>
+            <input type="text" name="display" id="display" disabled />
+          </div>
+          <!-- the input btns -->
+          <div class="input-btns-cntr">
+            <div>
+              <input
+                class="btn"
+                type="button"
+                name="delete"
+                value="del"
+              />
+              <!--todo another way to write delete onclick -->
+              <!--todo onclick="calculator.display.value =  calculator.display.value.substring(0, - 1)" -->
+              <input
+                class="btn input"
+                type="button"
+                name="bracket-open"
+                value="("
+                
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="bracket-close"
+                value=")"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="plus"
+                value="+"
+              />
+            </div>
+
+            <div>
+              <input
+                class="btn input"
+                type="button"
+                name="one"
+                value="1"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="two"
+                value="2"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="three"
+                value="3"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="minus"
+                value="-"
+              />
+            </div>
+
+            <div>
+              <input
+                class="btn input"
+                type="button"
+                name="four"
+                value="4"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="five"
+                value="5"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="six"
+                value="6"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="divide"
+                value="/"
+              />
+            </div>
+
+            <div>
+              <input
+                class="btn input"
+                type="button"
+                name="seven"
+                value="7"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="eight"
+                value="8"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="nine"
+                value="9"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="multiply"
+                value="*"
+              />
+            </div>
+
+            <div>
+              <input
+                class="btn"
+                type="button"
+                name="clear"
+                value="c"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="zero"
+                value="0"
+              />
+              <input
+                class="btn input"
+                type="button"
+                name="point"
+                value="."
+              />
+              <input
+                class="btn"
+                type="button"
+                name="equal"
+                value="="
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.container{
+background-image: url(/6-calculator/hallway-in-office.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ 
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(81, 83, 67, 0.473);
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(81, 83, 67, 0.692);
+}
+form> div.calulator-cntr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(53, 53, 53);
+    padding: 20px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+form> div.calulator-cntr input{
+    width: 220px;
+    height: 60px;
+    background-color: #ddd;
+    color: #000;
+    padding: 5px;
+}
+form> div.calulator-cntr div.input-btns-cntr{
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 10px 0;
+}
+form> div.calulator-cntr div.input-btns-cntr div{
+    padding:  5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+form> div.calulator-cntr div.input-btns-cntr div .btn, button{
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+}
+button:active{
+    box-shadow: 0px 0px 10px inset rgb(80, 80, 80);
+}
