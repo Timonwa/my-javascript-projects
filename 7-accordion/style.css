@@ -1,17 +1,31 @@
+/* ! default template styles for all projects */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* body wrapper */
 #flex {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: #babfff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* nav bar */
 nav {
   background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: rgb(48, 31, 31);
 }
+/* nav bar wrapper */
 .nav-cntr {
   display: flex;
   justify-content: space-between;
@@ -19,20 +33,37 @@ nav {
   padding: 20px;
   border-bottom: solid 2px grey;
 }
+/* nav bar links */
 .links a {
   text-decoration: none;
   color: blue;
   padding: 0 5px;
 }
+/* nav bar link to the list of all the projects' page */
+.links #projects {
+  font-weight: bold;
+  color: rgb(7, 173, 76);
+  text-transform: uppercase;
+}
+/* all nav bar links when active */
+.links a.active{
+  text-decoration: underline;
+}
+/* main section wrapper */
 #main-cntr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 50px auto;
-  border: solid 1px;
-  height: inherit;
-  width: 320px;
+  margin: 20px;
 }
+/* ! end of template styles */
+/* !======================= */
+
+/* ! project styles */
+/* accordion cntr */
 .accordion-cntr{
   display: flex;
   flex-direction: column;
@@ -40,19 +71,23 @@ nav {
   align-items: center;
   background-color: #fff;
 }
+/* accordion section */
 .acc-section{
   width: 280px;
   border: double goldenrod;
 }
+/* accordion title */
 .acc-title{
  color: #202020;
  position: relative;
  padding: 10px;
 }
+/* icons */
 i{
   position: absolute;
   right: 10px;
 }
+/* open and close btn */
 .fas{
   color: goldenrod;
   border: solid 1px;
@@ -70,16 +105,19 @@ i{
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
+/* close btn */
 .close{
   display: none;
   color: red;
 }
+/* accordion body */
 .acc-body{
   border-top: solid 1px goldenrod;
   padding: 10px;
   color: rgb(61, 59, 59);
   display: none;
 }
+/* javascript css classes to be added and removed */
 .active{
   display: inline-block;
 }

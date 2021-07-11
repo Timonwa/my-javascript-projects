@@ -1,4 +1,4 @@
-// varibles
+// variables
 const openBTn = document.querySelector(".open");
 const closeBtn = document.querySelector(".close");
 const popUp = document.querySelector(".pop-up");

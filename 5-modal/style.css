@@ -1,16 +1,31 @@
+/* ! default template styles for all projects */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* body wrapper */
 #flex {
+  min-height: 100vh;
+  width: 100vw;
   background-color: #babfff;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* nav bar */
 nav {
   background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: rgb(48, 31, 31);
 }
+/* nav bar wrapper */
 .nav-cntr {
   display: flex;
   justify-content: space-between;
@@ -18,13 +33,36 @@ nav {
   padding: 20px;
   border-bottom: solid 2px grey;
 }
+/* nav bar links */
+.links a {
+  text-decoration: none;
+  color: blue;
+  padding: 0 5px;
+}
+/* nav bar link to the list of all the projects' page */
+.links #projects {
+  font-weight: bold;
+  color: rgb(7, 173, 76);
+  text-transform: uppercase;
+}
+/* all nav bar links when active */
+.links a.active{
+  text-decoration: underline;
+}
+
+/* main section */
 main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  margin-top: 50px;
 }
+/* ! end of template styles */
+/* !======================= */
+
+/* ! project styles */
+/* modal-box */
 .modal-box {
   display: flex;
   flex-direction: column;
@@ -41,6 +79,7 @@ main{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+/* open btn */
 .open {
   margin: 20px;
   padding: 10px 20px;
@@ -55,6 +94,7 @@ main{
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
+/* popup box */
 .pop-up{
   display: flex;
   flex-direction: column;
@@ -74,6 +114,7 @@ main{
   -o-border-radius: 10px;
   z-index: -10;
 }
+/* close btn */
 .close{
   position: absolute;
   top: 0;
@@ -85,6 +126,7 @@ main{
   font-size: 120%;
   border: solid 1px;
 }
+/* modal-toggle for javascript*/
 .modal-toggle{
   z-index: 10;
 }

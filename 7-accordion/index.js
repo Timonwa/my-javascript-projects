@@ -1,4 +1,4 @@
-// varibles
+// variables
 const openBtn = document.querySelectorAll('.open');
 const closeBtn = document.querySelectorAll('.close');
 const accBody = document.querySelectorAll('.acc-body');

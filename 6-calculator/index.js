@@ -1,4 +1,4 @@
-// varibles
+// variables
 let display = document.getElementById("display");
 const deleteBtn = document.getElementsByName("delete");
 var inputs = document.getElementsByClassName("input");

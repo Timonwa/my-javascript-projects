@@ -13,8 +13,6 @@
   background-color: #babfff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 /* nav bar */
 nav {
@@ -49,12 +47,21 @@ nav {
 .links a.active{
   text-decoration: underline;
 }
-/* main section wrapper */
-#main-cntr {
+
+/* main section */
+main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+}
+/* main section wrapper */
+#main-cntr {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   margin: 20px;
@@ -63,41 +70,3 @@ nav {
 /* !======================= */
 
 /* ! project styles */
-/* heading */
-#main-cntr h3 {
-  padding-bottom: 20px;
-}
-/* slider cntr */
-#main-cntr > div {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  position: relative;
-}
-/* image */
-img {
-  width: 300px;
-  height: 200px;
-  padding: 10px;
-}
-/* count and number of the images */
-p{
-  text-align: center;
-}
-/* prev and next btns */
-.btn {
-  position: absolute;
-  top: 50%;
-  padding: 5px;
-  font-size: 80%;
-  background-color: rgb(228, 231, 231);
-  border: solid 1px rgb(201, 199, 199);
-  padding: 5px;
-}
-/* prev btn */
-#backward{
-  left: 0px;
-}
-/* next btn */
-#forward{
-  right: 0px;
-}

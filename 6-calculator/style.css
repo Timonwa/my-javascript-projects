@@ -1,8 +1,59 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* ! default template styles for all projects */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+/* body wrapper */
+#flex {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #babfff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* nav bar */
+nav {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: rgb(48, 31, 31);
+}
+/* nav bar wrapper */
+.nav-cntr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: solid 2px grey;
+}
+/* nav bar links */
+.links a {
+  text-decoration: none;
+  color: blue;
+  padding: 0 5px;
+}
+/* nav bar link to the list of all the projects' page */
+.links #projects {
+  font-weight: bold;
+  color: rgb(7, 173, 76);
+  text-transform: uppercase;
+}
+/* all nav bar links when active */
+.links a.active{
+  text-decoration: underline;
+}
+/* ! end of template styles */
+/* !======================= */
+
+/* ! project styles */
+/* body wrapper */
 div.container{
 background-image: url(/6-calculator/hallway-in-office.jpg);
 background-position: center;
@@ -12,8 +63,10 @@ background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 30px;
  
 }
+/* calculator form */
 form{
     display: flex;
     justify-content: center;
@@ -24,6 +77,7 @@ form{
     padding: 20px;
     box-shadow: 0px 0px 5px rgba(81, 83, 67, 0.692);
 }
+/* calulator cntr */
 form> div.calulator-cntr{
     display: flex;
     flex-direction: column;
@@ -37,6 +91,7 @@ form> div.calulator-cntr{
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
 }
+/* inputs */
 form> div.calulator-cntr input{
     width: 220px;
     height: 60px;
@@ -44,17 +99,20 @@ form> div.calulator-cntr input{
     color: #000;
     padding: 5px;
 }
+/* the input btns cntr */
 form> div.calulator-cntr div.input-btns-cntr{
     width: 220px;
     background-color: rgba(0, 0, 0, 0.411);
     padding: 10px 0;
 }
+/* the input btns subsections */
 form> div.calulator-cntr div.input-btns-cntr div{
     padding:  5px 10px;
     display: flex;
     justify-content: space-between;
 }
-form> div.calulator-cntr div.input-btns-cntr div .btn, button{
+/* the input btns */
+form> div.calulator-cntr div.input-btns-cntr div .btn{
     width: 40px;
     height: 40px;
     font-weight: bold;
@@ -64,7 +122,4 @@ form> div.calulator-cntr div.input-btns-cntr div .btn, button{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border: none;
-}
-button:active{
-    box-shadow: 0px 0px 10px inset rgb(80, 80, 80);
 }

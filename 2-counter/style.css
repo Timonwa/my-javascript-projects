@@ -1,40 +1,69 @@
+/* ! default template styles for all projects */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* body wrapper */
 #flex {
+  min-height: 100vh;
+  width: 100vw;
   background-color: #babfff;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+/* nav bar */
 nav {
   background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: rgb(48, 31, 31);
 }
+/* nav bar wrapper */
 .nav-cntr {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   border-bottom: solid 2px grey;
 }
+/* nav bar links */
 .links a {
   text-decoration: none;
   color: blue;
   padding: 0 5px;
 }
+/* nav bar link to the list of all the projects' page */
+.links #projects {
+  font-weight: bold;
+  color: rgb(7, 173, 76);
+  text-transform: uppercase;
+}
+/* all nav bar links when active */
+.links a.active{
+  text-decoration: underline;
+}
+/* main section wrapper */
 #main-cntr {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: auto;
-  margin-top: 50px;
-  width: 300px;
-  background-color: rgb(247, 247, 121);
-  border: solid 1px grey;
+  background-color: rgb(238, 236, 132);
+  margin: 20px;
 }
+/* ! end of template styles */
+/* !======================= */
+
+/* ! project styles */
+/* counter output */
 #main-cntr p {
   border-bottom: solid 2px;
   width: 50px;
@@ -42,12 +71,14 @@ nav {
   text-align: center;
   margin: 10px;
 }
+/* btns cntr */
 #main-cntr div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+/* btns */
 #main-cntr button {
   margin: 10px;
   padding: 10px 20px;
@@ -61,7 +92,4 @@ nav {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-}
-a.active {
-  text-decoration: underline;
 }
