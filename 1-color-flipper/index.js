@@ -25,6 +25,8 @@ hexpage.addEventListener("click", function () {
         hexcntr.style.display = "flex";
         rgbcntr.style.display = "none";
         hslcntr.style.display = "none";
+        // changes the background color
+        changeBackground.style.backgroundColor = hexcolor.textContent;       
     }
 });
 
@@ -37,6 +39,8 @@ rgbpage.addEventListener("click", function () {
         rgbcntr.style.display = "flex";
         hexcntr.style.display = "none";
         hslcntr.style.display = "none";
+        // changes the background color
+        changeBackground.style.backgroundColor = rgbcolor.textContent;
     }
 });
 
@@ -49,6 +53,8 @@ hslpage.addEventListener("click", function () {
         hslcntr.style.display = "flex";
         rgbcntr.style.display = "none";
         hexcntr.style.display = "none";
+        // changes the background color
+        changeBackground.style.backgroundColor = hslcolor.textContent;
     }
 });
     
