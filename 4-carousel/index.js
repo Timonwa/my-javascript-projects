@@ -14,7 +14,7 @@ const person = [
         img:
             "img/profile2.jpg",
         review:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae esse accusamus, harum praesentium alias provident molestias.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae esse accusamus, provident molestias.",
     },
     {
         name: "Adam Smith",
@@ -22,7 +22,7 @@ const person = [
         img:
             "img/profile3.jpg",
         review:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae esse accusamus, harum praesentium alias provident molestias.",
+            "Lorem ipsum dolor sit amet consectetur. Quasi repudiandae esse accusamus, harum praesentium alias provident molestias.",
     },
     {
         name: "Taylor Doe",
@@ -30,7 +30,7 @@ const person = [
         img:
             "img/profile4.jpg",
         review:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae esse accusamus, harum praesentium alias provident molestias.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae esse accusamus.",
     }
 ]
 // the varibles of the review card details

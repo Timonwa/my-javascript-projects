@@ -85,6 +85,7 @@ main{
   background-color: rgb(236, 214, 164);
   position: relative;
   width: 300px;
+  height: 350px;
 }
 .image-cntr {
   height: 120px;
