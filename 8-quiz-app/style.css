@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
 }
 /* body wrapper */
 #flex {
@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgb(48, 31, 31);
 }
 /* nav bar */
 nav {
@@ -49,26 +50,67 @@ nav {
 .links a.active{
   text-decoration: underline;
 }
-
-/* main section */
-/* main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-} */
 /* main section wrapper */
-#main-cntr {
+.main-cntr {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 20px;
+  background-color: rgb(252, 209, 216);
+  background-color: palegoldenrod;
+  margin: 80px;
+  width: 300px;
+  min-height: 300px;
 }
 /* ! end of template styles */
 /* !======================= */
 
 /* ! project styles */
+.intro{
+  padding: 30px;
+  text-align: center;
+}
+.intro h2{
+  padding-bottom: 0.5em;
+}
+.intro h3{
+  padding-bottom: 0.5em;
+color: rgb(77, 55, 55);
+}
+.title{
+  text-align: center;
+}
+#qs, .options{
+  padding-bottom: 0.7em;
+}
+.qs-count{
+  padding-bottom: 0.5em;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+input{
+  cursor: pointer;
+}
+.buttons{
+  padding: 10px;
+}
+button{
+  margin:0 10px;
+  padding: 2px 5px;
+  border: solid 2px #ddd;
+  cursor: pointer;
+}
+#ans{
+  display: none;
+}
+#ans .correct{
+  color: green;
+}
+#ans .failed{
+  color: red;
+}
+#question-cntr{
+  display: none;
+}

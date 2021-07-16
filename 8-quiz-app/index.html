@@ -63,9 +63,50 @@
 
       <!-- main section -->
       <main>
-        <div id="main-cntr">
-          <p>paragraph</p>
-          <button>button</button>
+        <!-- intro -->
+        <div class="main-cntr intro">
+          <h2>How well do you know Timonwa?</h2>
+          <h3 id="start-btn">Let Find Out!</h3>
+          <button>Start Quiz</button>
+        </div>
+        <!-- question cntr -->
+        <div class="main-cntr" id="question-cntr">
+          <div class="title">
+            <h4>Timonwa's Quiz</h4>
+            <p class="qs-count"><span id="qs-number">1</span><span>/10</span></p> 
+          </div>
+          <!-- question -->
+          <p id="qs">Is Timonwa my real name?</p>
+          <!-- options -->
+          <div class="options">
+            <p>
+              <input type="radio" name="option" id="a">
+              <label for="a">Yes</label>
+            </p>
+            <p>
+            <input type="radio" name="option" id="b">
+            <label for="b">No</label>
+            </p>
+            <p>
+            <input type="radio" name="option" id="c">
+            <label for="c">I dunno</label>
+          </p>
+          <p>
+            <input type="radio" name="option" id="d">
+            <label for="d">Who is Timonwa?</label>
+          </p>
+          </div>
+          <!-- action buttons -->
+          <div class="buttons">
+            <button id="submit-btn" disabled>Submit</button>
+            <button id="next-btn" disabled>Next</button>
+          </div>
+          <!-- answer validation -->
+          <p id="ans">
+            <i class="correct fas fa-check"></i>
+            <i class="failed fas fa-times-circle"></i>
+            <span class="ans-text"></span>
+          </p>
         </div>
       </main>
     </div>
