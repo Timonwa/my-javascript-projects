@@ -56,9 +56,9 @@
             <h3>Color Flipper</h3>
           </div>
           <div class="links">
-            <a class="active" href="index.html">HEX</a>
-            <a href="rgb.html">RGB</a>
-            <a href="hsl.html">HSL</a>
+            <span id="hex-page">HEX</span>
+            <span id="rgb-page">RGB</span>
+            <span id="hsl-page">HSL</span>
           </div>
           <div class="links">
             <a id="projects" href="/index.html">Projects</a>
@@ -68,16 +68,24 @@
 
       <!-- main section -->
       <main>
-        <div id="main-cntr">
+        <div class="main-cntr" id="hex-cntr">
           <p>Change the background color by clicking this button.</p>
-          <button id="color">#babfff</button>
+          <button id="hex-color">#babfff</button>
+        </div>
+        <div class="main-cntr" id="rgb-cntr">
+          <p>Change the background color by clicking this button.</p>
+          <button id="rgb-color">rgb(186, 191, 255)</button>
+        </div>
+        <div class="main-cntr" id="hsl-cntr">
+          <p>Change the background color by clicking this button.</p>
+          <button id="hsl-color">hsl(26, 100%, 86%)</button>
         </div>
       </main>
     </div>
 
     <!--* My Javascript code link -->
     <!-- main Javascript code -->
-    <script type="text/javascript" src="hex.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 
     <!--* Bootstrap Online JavaScript, jQuery, Popper; choose one of the two! -->
     <!--todo Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
