@@ -90,6 +90,11 @@ section div{
   padding: 15px 0;
   border-top: solid 1px;
 }
+.attribution{
+  text-align: center;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
 
 @media screen and (min-width: 768px){
 /* body wrapper */
