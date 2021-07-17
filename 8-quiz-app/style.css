@@ -67,16 +67,19 @@ nav {
 /* !======================= */
 
 /* ! project styles */
-.intro{
+.intro, .outro{
   padding: 30px;
   text-align: center;
 }
-.intro h2{
+.intro h2, .outro h2{
   padding-bottom: 0.5em;
 }
-.intro h3{
+.intro h3, .outro h3{
   padding-bottom: 0.5em;
 color: rgb(77, 55, 55);
+}
+.outro h3{
+  text-decoration: underline;
 }
 .title{
   text-align: center;
@@ -102,15 +105,20 @@ button{
   border: solid 2px #ddd;
   cursor: pointer;
 }
+#finish-btn{
+  display: none;
+}
 #ans{
   display: none;
 }
 #ans .correct{
   color: green;
+  display: none;
 }
 #ans .failed{
   color: red;
+  display: none;
 }
-#question-cntr{
+#question-cntr, .outro{
   display: none;
 }
