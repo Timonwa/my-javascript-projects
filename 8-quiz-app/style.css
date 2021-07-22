@@ -56,11 +56,12 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(252, 209, 216);
   background-color: palegoldenrod;
   margin: 80px;
-  width: 300px;
+  margin-top: 100px;
+  width: 340px;
   min-height: 300px;
 }
 /* ! end of template styles */
@@ -72,10 +73,10 @@ nav {
   text-align: center;
 }
 .intro h2, .outro h2{
-  padding-bottom: 0.5em;
+  padding-bottom: 0.3em;
 }
 .intro h3, .outro h3{
-  padding-bottom: 0.5em;
+  padding-bottom: 0.3em;
 color: rgb(77, 55, 55);
 }
 .outro h3{
@@ -85,7 +86,7 @@ color: rgb(77, 55, 55);
   text-align: center;
 }
 #qs, .options{
-  padding-bottom: 0.7em;
+  padding-bottom: 0.5em;
 }
 .qs-count{
   padding-bottom: 0.5em;

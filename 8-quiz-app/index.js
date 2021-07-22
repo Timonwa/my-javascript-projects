@@ -101,6 +101,9 @@ var correctAnswers = 0;
 // *functions
 // quiz card when the page loads
 window.addEventListener("DOMContentLoaded", function () {
+    for (i of options) {
+        i.checked = false;
+    };
     qsNumber.textContent = currentQuestion + 1;
     for (i of qsTotal){
     i.textContent = questions.length;
@@ -230,6 +233,6 @@ finishBtn.addEventListener('click', function finish() {
 });
 retakeBtn.addEventListener('click', function() {
     location.reload();
-    // return false;
+    return false;
 });
 
