@@ -19,9 +19,6 @@ result[0].addEventListener("click", function () {
 });
 
 // input btns on click
-for (var i = 0; i < inputs.length; i++) {
-};
-
 for (i of inputs) {
     i.addEventListener("click", function () {
         display.value += this.value

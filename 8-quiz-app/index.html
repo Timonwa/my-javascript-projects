@@ -63,10 +63,61 @@
 
       <!-- main section -->
       <main>
-        <div id="main-cntr">
-          <p>paragraph</p>
-          <button>button</button>
+        <!-- intro -->
+        <div class="main-cntr intro">
+          <h2>How well do you know Timonwa?</h2>
+          <h3>Let Find Out!</h3>
+          <button id="start-btn">Start Quiz</button>
         </div>
+        <!-- question cntr -->
+        <div class="main-cntr" id="question-cntr">
+          <div class="title">
+            <h4>Timonwa's Quiz</h4>
+            <p class="qs-count"><span id="qs-number"></span>/<span class="qs-total"></span></p> 
+          </div>
+          <!-- question -->
+          <p id="qs"></p>
+          <!-- options -->
+          <div class="options">
+            <p>
+              <input type="radio" name="option" id="aqs">
+              <label for="aqs" id="a"></label>
+            </p>
+            <p>
+            <input type="radio" name="option" id="bqs">
+            <label for="bqs" id="b"></label>
+            </p>
+            <p>
+            <input type="radio" name="option" id="cqs">
+            <label for="cqs" id="c"></label>
+          </p>
+          <p>
+            <input type="radio" name="option" id="dqs">
+            <label for="dqs" id="d"></label>
+          </p>
+          </div>
+          <!-- action buttons -->
+          <div class="buttons">
+            <button id="submit-btn">Submit</button>
+            <button id="next-btn">Next</button>
+            <button id="finish-btn">Finish</button>
+          </div>
+          <!-- answer validation -->
+          <p id="ans">
+            <i class="correct fas fa-check"></i>
+            <i class="failed fas fa-times-circle"></i>
+            <span class="ans-text"></span>
+          </p>
+        </div>
+        <!-- outro -->
+        <div class="main-cntr outro">
+          <h2>How well do you know Timonwa?</h2>
+          <h3>Quiz Result</h3>
+          <p>You scored <span id="correct-ans"></span>/<span class="qs-total"></span></p>
+          <p id="result-comment"></p>
+          <div class="buttons">
+            <button id="retake-btn">Retake Quiz.</button>
+          </div>
       </main>
     </div>
 
