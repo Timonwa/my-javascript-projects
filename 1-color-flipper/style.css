@@ -34,10 +34,13 @@ nav {
   border-bottom: solid 2px grey;
 }
 /* nav bar links */
-.links a {
+.links a, .links span {
   text-decoration: none;
   color: blue;
   padding: 0 5px;
+}
+#hex-page{
+  text-decoration: underline;
 }
 /* nav bar link to the list of all the projects' page */
 .links #projects {
@@ -45,12 +48,8 @@ nav {
   color: rgb(7, 173, 76);
   text-transform: uppercase;
 }
-/* all nav bar links when active */
-.links a.active{
-  text-decoration: underline;
-}
 /* main section wrapper */
-#main-cntr {
+.main-cntr {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,7 +63,7 @@ nav {
 
 /* ! project styles */
 /*  btn */
-#main-cntr button {
+.main-cntr button {
   margin: 20px;
   padding: 10px 20px;
   font-weight: 600;
@@ -76,4 +75,7 @@ nav {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+}
+#rgb-cntr, #hsl-cntr{
+  display: none;
 }
